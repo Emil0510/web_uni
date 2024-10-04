@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('new_tech 1.png'); /* Change this to your correct image path */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .signin-container {
+            background-color: white;
+            padding: 30px;
+            width: 450px;
+            height: 90%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Adjusted Pentagon shape for bottom left and right angles */
+            clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0% 90%, 0% 10%);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            color: #000; /* Set to black for matching design */
+        }
+        input[type="email"], input[type="password"] {
+            width: 70%;
+            padding: 12px;
+            margin: 20px 0;
+            margin-bottom: 20px;
+            border-radius: 8px; /* Rounded corners */
+            border: none;
+            font-size: 16px;
+            background-color: #f3f3f3; /* Light background like in the design */
+        }
+        text{
+            color: black;
+            border: none;
+            align-self: flex-start;
+            margin-inline-start: 12%;
+            font-size: 15px;
+            font-weight: bold; /* Bold text */
+            cursor: pointer; 
+        }
+        button {
+            padding: 8px;
+            padding-inline-start: 56px;
+            padding-inline-end: 56px;
+            background-color: #2871AA; /* Button color */
+            color: white;
+            margin-top: 4px;
+            border: none;
+            border-radius: 8px; /* Rounded corners */
+            font-size: 18px;
+            font-weight: bold; /* Bold text */
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2871AA; /* Darker blue on hover */
+        }
+        .register-link {
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #2871AA; /* Blue color for the Register link */
+        }
+        .register-link a {
+            color: #2871AA;
+            font-weight: bold;
+        }
+        .custom-hr {
+            border: none;             /* Remove default border */
+            height: 1px;              /* Set the thickness of the line */
+            background-color: #000;   /* Set the line color */
+            width: 80%;              /* Set the width of the line */
+            margin-bottom: 40px;          /* Set margin to create spacing above and below */
+        }
+
+        .login-link {
+            margin-top: 10px;
+            display: block;
+            font-size: 14px;
+        }
+        .login-link a {
+            color: #2871AA;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+        .social-icons img {
+            width: 48px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        @font-face {
+            font-family: "openSsans";
+            src: url('OpenSans-Regular');
+        }
+    </style>
+</head>
+<body>
+    <div class="signin-container">
+        <h1>Sign Up</h1>
+        <hr class="custom-hr">
+        <text>Full Name</text>
+        <input type="email" placeholder="" required>
+        <text>Email</text>
+        <input type="email" placeholder="" required>
+        <text>Password</text>
+        <input type="password" placeholder="" required>
+        <text>Confirm Password</text>
+        <input type="password" placeholder="" required>
+        <button>Sign Up</button> <!-- Matching typo -->
+        <span class="login-link">Already have an account? </span>
+        <span class="register-link">Login</span>
+        <div class="social-icons">
+            <img src="facebook-icon.png" alt="Facebook">
+            <img src="google-icon.png" alt="Google">
+            <img src="instagram-icon.png" alt="Instagram">
+        </div>
+    </div>
+</body>
+</html>
